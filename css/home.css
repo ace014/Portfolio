@@ -1,0 +1,29 @@
+section#mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.carousel {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--UMRed);
+    border: 0.15vw solid var(--LSilver);
+    color: var(--White);
+    font-size: 2vw;
+}
+
+.carousel h3 {
+    margin: 3vh 0;
+}
+
+.carousel p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5vw;
+}

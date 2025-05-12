@@ -6,6 +6,7 @@
     </div>
     <div id="bot">
         <nav>
+            <a href="index.php">HOME</a>
             <a href="index.php">OUR PROJECTS</a>
             <a href="servicesPage.php">OUR GALLERY</a>
             <a href="aboutUS.php">ABOUT US</a>
