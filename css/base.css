@@ -19,7 +19,7 @@ body {
     overflow-x: hidden;
     background: var(--LGray);
     color: var(--Charcoal);
-    font-size: 1.125vw;
+    font-size: 15px;
 }
 
 main {

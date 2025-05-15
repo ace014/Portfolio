@@ -16,40 +16,40 @@
         <main>
             <?php include("php/aside.php"); ?>
             <section id="mainContent">
-                <a class="photos">
+                <a class="photo">
                     <img src="img/png/homeCarou1.png" alt="Image 1">
-                    <div class="photosText">
-                        <h2>Photos Title 1</h2>
+                    <div class="photoText">
+                        <h2>Photo Title 1</h2>
                     </div>
                 </a>
-                <a class="photos">
+                <a class="photo tall">
                     <img src="img/png/homeCarou2.png" alt="Image 2">
-                    <div class="photosText">
-                        <h2>Photos Title 2</h2>
+                    <div class="photoText">
+                        <h2>Photo Title 2</h2>
                     </div>
                 </a>
-                <a class="photos">
+                <a class="photo">
                     <img src="img/png/homeCarou3.png" alt="Image 3">
-                    <div class="photosText">
-                        <h2>Photos Title 3</h2>
+                    <div class="photoText">
+                        <h2>Photo Title 3</h2>
                     </div>
                 </a>
-                <a class="photos">
+                <a class="photo wide">
                     <img src="img/png/homeCarou4.png" alt="Image 4">
-                    <div class="photosText">
-                        <h2>Photos Title 4</h2>
+                    <div class="photoText">
+                        <h2>Photo Title 4</h2>
                     </div>
                 </a>
-                <a class="photos">
+                <a class="photo">
                     <img src="img/png/homeCarou5.png" alt="Image 5">
-                    <div class="photosText">
-                        <h2>Photos Title 5</h2>
+                    <div class="photoText">
+                        <h2>Photo Title 5</h2>
                     </div>
                 </a>
-                <a class="photos">
+                <a class="photo">
                     <img src="img/png/homeCarou1.png" alt="Image 6">
-                    <div class="photosText">
-                        <h2>Photos Title 6</h2>
+                    <div class="photoText">
+                        <h2>Photo Title 6</h2>
                     </div>
                 </a>
             </section>

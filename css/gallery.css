@@ -1,47 +1,50 @@
 section#mainContent {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 50vh; 
+    grid-auto-flow: dense;
 }
 
-.photos {
-    height: 50vh;
-    width: 100%;
+.photo {
+    position: relative;
     overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     transition: all 0.25s ease-in-out;
 }
 
-.photos img {
+.photo img {
+    width: 100%;
     height: 100%;
+    object-fit: cover;
     transition: all 0.25s ease-in-out;
 }
 
-.photosText {
+.photoText {
     position: absolute;
-    color: white;
-    width: 30%;
-    opacity: 0;
+    color: var(--White);
+    width: 100%;
     text-align: center;
-    text-shadow: 0 0 10px black;
+    text-shadow: 0 0 10px var(--Charcoal);
+    background: linear-gradient(0deg, var(--Charcoal), rgba(0, 0, 0, 0.75), transparent);
+    transform: translateY(100%);
     transition: all 0.25s ease-in-out;
 }
 
-.photos:hover .photosText {
-    opacity: 1;
+.photo:hover .photoText {
+    transform: translateY(0);
 }
 
-.photos:hover img {
-    filter: brightness(0.5);
+.photo.large {
+    grid-column: span 2;
+    grid-row: span 2;
 }
 
-.photos.active img {
-    filter: brightness(0.3);
+.photo.wide {
+    grid-column: span 2;
 }
 
-.photos.active .photosText {
-    opacity: 1;
-    transform: scale(1.1);
+.photo.tall {
+    grid-row: span 2;
 }
