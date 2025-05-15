@@ -17,7 +17,7 @@
             <?php include("php/aside.php"); ?>
             <section id="mainContent">
                 <div id="topContent">
-                    <p>LIST OF OUR PROJECTS TOGETHER</p>
+                    <h1>LIST OF OUR PROJECTS TOGETHER</h1>
                     <button id="upButton">
                         <div class="upArrow"></div>
                     </button>

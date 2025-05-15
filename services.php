@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $pageTitle = "Our Projects";
+    $pageTitle = "Our Services";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +17,7 @@
             <?php include("php/aside.php"); ?>
             <section id="mainContent">
                 <div id="topContent">
-                    <p>LIST OF OUR SERVICES</p>
+                    <h1>LIST OF OUR SERVICES</h1>
                     <button id="upButton">
                         <div class="upArrow"></div>
                     </button>
