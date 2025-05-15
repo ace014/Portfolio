@@ -16,13 +16,14 @@ html {
 
 body {
     margin: 0;
+    overflow-x: hidden;
     background: var(--LGray);
     color: var(--Charcoal);
     font-size: 1.125vw;
 }
 
 main {
-    padding: 3vh 2vw;
+    /* padding: 3vh 2vw; */
     display: flex;
     flex-direction: row;
     gap: 2vw;
@@ -36,7 +37,9 @@ aside {
     position: sticky;
     top: 3vh;
     height: calc(100vh - 6vh); 
+    margin: 3vh 0 3vh 2vw;
     border: 0.15vw solid var(--LSilver);
+    border-radius: 0.75vw;
     overflow-y: auto; 
 }
 
@@ -74,9 +77,6 @@ aside nav {
 
 section#mainContent {
     flex: 3;
-    background: var(--White);
-    border: 0.15vw solid var(--LSilver);
-    padding: 3vh 2vw;
 }
 
 section#mainContent > h2 {

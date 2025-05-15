@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $pageTitle = "Our Portfolio Website";
+    $pageTitle = "Our Portfolio";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +17,6 @@
         <main>
             <?php include("php/aside.php"); ?>
             <section id="mainContent">
-                <h2>HOME</h2>
                 <div class="carousel">
                     <div id="title">
                         <h3>Years of Cooperation and Partnership</h3>
