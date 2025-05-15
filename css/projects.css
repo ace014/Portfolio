@@ -1,0 +1,46 @@
+section#mainContent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.project {
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.25s ease-in-out;
+}
+
+.project img {
+    height: 100%;
+    transition: all 0.25s ease-in-out;
+}
+
+.projectText {
+    position: absolute;
+    color: white;
+    width: 30%;
+    opacity: 0;
+    text-align: center;
+    text-shadow: 0 0 10px black;
+    transition: all 0.25s ease-in-out;
+}
+
+.project:hover .projectText {
+    opacity: 1;
+}
+
+.project:hover img {
+    filter: brightness(0.5);
+}
+
+.project.active img {
+    filter: brightness(0.3);
+}
+
+.project.active .projectText {
+    opacity: 1;
+    transform: scale(1.1);
+}
