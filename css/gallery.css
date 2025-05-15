@@ -1,0 +1,47 @@
+section#mainContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.photos {
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.25s ease-in-out;
+}
+
+.photos img {
+    height: 100%;
+    transition: all 0.25s ease-in-out;
+}
+
+.photosText {
+    position: absolute;
+    color: white;
+    width: 30%;
+    opacity: 0;
+    text-align: center;
+    text-shadow: 0 0 10px black;
+    transition: all 0.25s ease-in-out;
+}
+
+.photos:hover .photosText {
+    opacity: 1;
+}
+
+.photos:hover img {
+    filter: brightness(0.5);
+}
+
+.photos.active img {
+    filter: brightness(0.3);
+}
+
+.photos.active .photosText {
+    opacity: 1;
+    transform: scale(1.1);
+}

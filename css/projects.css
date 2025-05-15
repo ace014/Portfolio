@@ -1,46 +1,82 @@
 section#mainContent {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3vh 0;
+}
+
+section#mainContent > * {
+    width: 65vw;
+}
+
+section#mainContent > #topContent {
+    height: 10vh;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#mainContent > #botContent {
+    height: 10vh;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#mainContent > #midContent {
+    position: relative;
+    height: 50vh;     
+    margin-right: 2vw;
+    overflow: hidden;  
+}
+
+#projectSlider {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease-in-out;
 }
 
 .project {
     height: 50vh;
-    width: 100%;
+    display: flex;
+    flex-flow: row;
+    border-radius: 0.75vw;
+    background: var(--White);
     overflow: hidden;
+}
+
+.project > #projectImg {
+    flex: 1.5;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.25s ease-in-out;
+    overflow: hidden;
 }
 
-.project img {
-    height: 100%;
-    transition: all 0.25s ease-in-out;
+.project > #projectImg > img {
+    height: 110%;
 }
 
-.projectText {
-    position: absolute;
-    color: white;
-    width: 30%;
-    opacity: 0;
-    text-align: center;
-    text-shadow: 0 0 10px black;
-    transition: all 0.25s ease-in-out;
+.project > #projectDesc {
+    padding: 0 2vw;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.project:hover .projectText {
-    opacity: 1;
+#upButton, #downButton {
+    all: unset;
+    margin: 0 5vw;
 }
 
-.project:hover img {
-    filter: brightness(0.5);
+#upButton > *, #downButton > * {
+    transform: scale(4);
 }
 
-.project.active img {
-    filter: brightness(0.3);
-}
-
-.project.active .projectText {
-    opacity: 1;
-    transform: scale(1.1);
+#upButton:hover, #downButton:hover {
+    cursor: pointer;
 }

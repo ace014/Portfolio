@@ -16,50 +16,88 @@
         <main>
             <?php include("php/aside.php"); ?>
             <section id="mainContent">
-                <a class="project">
-                    <img src="img/png/homeCarou1.png" alt="Image 1">
-                    <div class="projectText">
-                        <h2>Project Title 1</h2>
-                        <p>Description of the project goes here. This is a brief overview of what the project is about.</p>
+                <div id="topContent">
+                    <p>LIST OF OUR PROJECTS TOGETHER</p>
+                    <button id="upButton">
+                        <div class="upArrow"></div>
+                    </button>
+                </div>
+                <div id="midContent">
+                    <div id="projectSlider">
+                        <div class="project">
+                            <div id="projectImg">
+                                <img src="img/png/homeCarou1.png" alt="Project 1">
+                            </div>
+                            <div id="projectDesc">
+                                <h2>Project 1 Title</h2>
+                                <p>
+                                    Date: Month Day, Year
+                                    <br><br>
+                                    Lorem ipsum dolor sit amet. Qui nihil commodi est mollitia nostrum ut consequatur quos. Et sapiente enim aut consectetur magni aut amet omnis. Eos velit vero aut aliquam natus et quisquam temporibus qui voluptates velit qui quibusdam recusandae vel repudiandae dignissimos quo illum dolorem.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div id="projectImg">
+                                <img src="img/png/homeCarou2.png" alt="Project 2">
+                            </div>
+                            <div id="projectDesc">
+                                <h2>Project 2 Title</h2>
+                                <p>
+                                    Date: Month Day, Year
+                                    <br><br>
+                                    Lorem ipsum dolor sit amet. Qui nihil commodi est mollitia nostrum ut consequatur quos. Et sapiente enim aut consectetur magni aut amet omnis. Eos velit vero aut aliquam natus et quisquam temporibus qui voluptates velit qui quibusdam recusandae vel repudiandae dignissimos quo illum dolorem.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div id="projectImg">
+                                <img src="img/png/homeCarou3.png" alt="Project 2">
+                            </div>
+                            <div id="projectDesc">
+                                <h2>Project 3 Title</h2>
+                                <p>
+                                    Date: Month Day, Year
+                                    <br><br>
+                                    Lorem ipsum dolor sit amet. Qui nihil commodi est mollitia nostrum ut consequatur quos. Et sapiente enim aut consectetur magni aut amet omnis. Eos velit vero aut aliquam natus et quisquam temporibus qui voluptates velit qui quibusdam recusandae vel repudiandae dignissimos quo illum dolorem.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </a>
-                <a class="project">
-                    <img src="img/png/homeCarou2.png" alt="Image 2">
-                    <div class="projectText">
-                        <h2>Project Title 2</h2>
-                        <p>Description of the project goes here. This is a brief overview of what the project is about.</p>
-                    </div>
-                </a>
-                <a class="project">
-                    <img src="img/png/homeCarou3.png" alt="Image 3">
-                    <div class="projectText">
-                        <h2>Project Title 3</h2>
-                        <p>Description of the project goes here. This is a brief overview of what the project is about.</p>
-                    </div>
-                </a>
-                <a class="project">
-                    <img src="img/png/homeCarou4.png" alt="Image 4">
-                    <div class="projectText">
-                        <h2>Project Title 4</h2>
-                        <p>Description of the project goes here. This is a brief overview of what the project is about.</p>
-                    </div>
-                </a>
-                <a class="project">
-                    <img src="img/png/homeCarou5.png" alt="Image 5">
-                    <div class="projectText">
-                        <h2>Project Title 5</h2>
-                        <p>Description of the project goes here. This is a brief overview of what the project is about.</p>
-                    </div>
-                </a>
-                <a class="project">
-                    <img src="img/png/homeCarou1.png" alt="Image 6">
-                    <div class="projectText">
-                        <h2>Project Title 6</h2>
-                        <p>Description of the project goes here. This is a brief overview of what the project is about.</p>
-                    </div>
-                </a>
+                </div>
+                <div id="botContent">
+                    <button id="downButton">
+                        <div class="downArrow"></div>
+                    </button>
+                </div>
             </section>
         </main>
         <?php include("php/footer.php"); ?>
+        <script>
+            const upButton = document.getElementById("upButton");
+            const downButton = document.getElementById("downButton");
+            const projectSlider = document.getElementById("projectSlider");
+            const projects = document.querySelectorAll(".project");
+            let currentIndex = 0;
+
+            function updateSlider() {
+                const offset = -currentIndex * 50; 
+                projectSlider.style.transform = "translateY(" + offset + "vh)";
+            }
+
+            upButton.addEventListener("click", () => {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateSlider();
+                }
+            });
+
+            downButton.addEventListener("click", () => {
+                if (currentIndex < projects.length - 1) {
+                    currentIndex++;
+                    updateSlider();
+                }
+            });
+        </script>
     </body>
 </html>
