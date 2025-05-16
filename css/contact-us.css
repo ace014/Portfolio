@@ -1,0 +1,38 @@
+#mainContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#mainContent > span {
+    font: 700 18px "Montserrat", sans-serif;
+}
+#mainContent > div {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+#mainContent h3, #mainContent div > span {
+    text-transform: uppercase;
+}
+#mainContent div > span {
+    color: #ffffff;
+}
+/*  */
+#mainContent a {
+    font: 700 15px "Montserrat", sans-serif;
+}
+#mainContent div span {
+    font: 700 12px "Montserrat", sans-serif;
+}
+#mainContent > div > div {
+    background-color: #B20E1E;
+    padding: 20px;
+    width: calc(100vw * 0.3);
+}
+#mainContent > div > div > a {
+    display: block;
+    color: #ffffff;
+}
