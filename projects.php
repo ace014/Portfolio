@@ -10,7 +10,7 @@
         <title><?php echo $pageTitle; ?></title>
         <link rel="shortcut icon" href="img/png/logo.png">
         <link rel="stylesheet" href="css/base.css">
-        <link rel="stylesheet" href="css/projects.css"> 
+        <link rel="stylesheet" href="css/projects&skills.css"> 
     </head>
     <body>
         <main>

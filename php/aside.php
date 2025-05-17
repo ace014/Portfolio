@@ -7,10 +7,10 @@
     <div id="bot">
         <nav>
             <a href="index.php">HOME</a>
-            <a href="services.php">OUR SERVICES</a>
+            <a href="skills.php">OUR SKILLS</a>
             <a href="projects.php">OUR PROJECTS</a>
             <a href="gallery.php">OUR GALLERY</a>
-            <a href="aboutUS.php">ABOUT US</a>
+            <a href="about-us.php">ABOUT US</a>
             <a href="aboutUS.php" class="indent">ACE GERALD GALVEZ</a>
             <a href="aboutUS.php" class="indent">VICTOR BRENTH SYMONE VILLAVER</a>
             <a href="contact-us.php">CONTACT US</a>

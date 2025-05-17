@@ -1,0 +1,102 @@
+section#mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    gap: 2vh;
+}
+
+#initialContent {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: var(--UMRed);
+    color: var(--White);
+}
+
+#initialContent h3 {
+    margin: 3vh 0;
+    font-size: 3rem;
+    z-index: 1;
+}
+
+#initialContent p {
+    margin: 0 6vw;
+    padding: 0;
+    z-index: 1;
+    font-size: 1.25rem;
+    text-align: justify;
+}
+
+#initialContent img {
+    position: absolute;
+    height: 100%;
+    filter: grayscale(100%);
+    opacity: 0.25;
+}
+
+.developer {
+    height: 50vh;
+    margin-right: 2vw;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0.75vw;
+    overflow: hidden;
+    background: var(--White);
+}
+
+.developer:last-child {
+    margin-bottom: 3vh;
+}
+
+.developer > img {
+    height: 100%;
+}
+
+.developer > #developerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.developer > #developerText > *{
+    margin: 0 2vw;
+}
+
+.developer > #developerText > h3 {
+    margin-bottom: 1vh;
+    color: var(--UMRed);
+    font-size: 2rem;
+}
+
+.developer > #developerText > h4 {
+    margin-bottom: 3vh;
+    font-size: 1.5rem;
+}
+
+.developer > #developerText > p {
+    margin-bottom: 3vh;
+}
+
+
+.developer > #developerText > a {    
+    align-self: self-start;
+    background: var(--UMRed);
+    color: var(--White);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 2vh 2vw;
+    border-radius: 0.75vw;
+    transition: all 0.25s ease-in-out;
+}
+
+.developer > #developerText > a:hover {
+    background: var(--White);
+    color: var(--UMRed);
+    border: 0.15vw solid var(--UMRed);
+    transform: scale(1.025);
+}

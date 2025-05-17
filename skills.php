@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $pageTitle = "Our Services";
+    $pageTitle = "Our Skills";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,14 +10,14 @@
         <title><?php echo $pageTitle; ?></title>
         <link rel="shortcut icon" href="img/png/logo.png">
         <link rel="stylesheet" href="css/base.css">
-        <link rel="stylesheet" href="css/projects.css"> 
+        <link rel="stylesheet" href="css/projects&skills.css"> 
     </head>
     <body>
         <main>
             <?php include("php/aside.php"); ?>
             <section id="mainContent">
                 <div id="topContent">
-                    <h1>LIST OF OUR SERVICES</h1>
+                    <h1>LIST OF OUR SKILLS</h1>
                     <button id="upButton">
                         <div class="upArrow"></div>
                     </button>
