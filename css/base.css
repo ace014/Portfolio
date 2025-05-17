@@ -75,6 +75,15 @@ aside nav {
     font-weight: 500;
 }
 
+aside nav a {
+    transition: all 0.25s ease-in-out;
+}
+
+aside nav a:hover {
+    font-size: 1.05rem;
+    color: var(--UMRed); 
+}
+
 section#mainContent {
     flex: 3;
 }
@@ -94,6 +103,7 @@ footer {
 
 .indent {
     padding-left: 2vw;
+    font-size: inherit;
 }
 
 .upArrow {

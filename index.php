@@ -33,6 +33,74 @@
             </section>
         </main>
         <?php include("php/footer.php"); ?>
-        <script src="js/carousel_fade_fullAuto.js"></script> <!-- Add this line -->
+        <script src="js/carousel_fade_fullAuto.js"></script>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            const carousel = document.querySelector(".carousel");
+            
+            const particlesDiv = document.createElement("div");
+            particlesDiv.id = "particles-js";
+            particlesDiv.style.position = "absolute";
+            particlesDiv.style.top = "0";
+            particlesDiv.style.left = "0";
+            particlesDiv.style.width = "100%";
+            particlesDiv.style.height = "100%";
+            particlesDiv.style.pointerEvents = "none"; 
+            particlesDiv.style.zIndex = "1";
+            
+            carousel.appendChild(particlesDiv);
+
+            particlesJS("particles-js", {
+              "particles": {
+                "number": {
+                  "value": 250,
+                  "density": {
+                    "enable": true,
+                    "value_area": 800
+                  }
+                },
+                "color": {
+                  "value": "#F9B300"
+                },
+                "shape": {
+                  "type": "circle"
+                },
+                "opacity": {
+                  "value": 0.6,
+                  "random": true
+                },
+                "size": {
+                  "value": 3,
+                  "random": true
+                },
+                "line_linked": {
+                  "enable": false
+                },
+                "move": {
+                  "enable": true,
+                  "speed": 1,
+                  "direction": "top",
+                  "random": true,
+                  "straight": false,
+                  "out_mode": "out"
+                }
+              },
+              "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                  "onhover": {
+                    "enable": false
+                  },
+                  "onclick": {
+                    "enable": false
+                  },
+                  "resize": true
+                }
+              },
+              "retina_detect": true
+            });
+          });
+        </script>
     </body>
 </html>

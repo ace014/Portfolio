@@ -68,6 +68,10 @@ section#mainContent > #midContent {
     justify-content: center;
 }
 
+.project > #projectDesc > h2 {
+    color: var(--UMRed);
+}
+
 #upButton, #downButton {
     all: unset;
     margin: 0 5vw;
