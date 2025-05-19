@@ -24,7 +24,6 @@ section#mainContent > *{
 #bodyContent {
     display: flex;
     flex-flow: column;
-    justify-content: center;
     border-radius: 0.75vw;
     background: var(--White);
     overflow: hidden;
@@ -64,6 +63,7 @@ section#mainContent > *{
 
 #headerText > ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     list-style: none;
     margin: 0;
@@ -73,11 +73,11 @@ section#mainContent > *{
 #headerText > ul li {
     background-color: var(--DMaroon);
     color: var(--White);
-    padding: 1.5vh 1.5vw;
+    padding: 1.25vh 1.25vw;
     border-radius: 1vw;
     transition: all 0.25s ease-in-out;
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 700;
 }
 
