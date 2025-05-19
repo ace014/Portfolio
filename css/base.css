@@ -79,6 +79,12 @@ aside nav a {
     transition: all 0.25s ease-in-out;
 }
 
+aside nav a.active {    
+    font-size: 1.05rem;
+    color: var(--UMRed);
+    text-decoration: underline;
+}
+
 aside nav a:hover {
     font-size: 1.05rem;
     color: var(--UMRed); 
