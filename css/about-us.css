@@ -14,7 +14,7 @@ section#mainContent {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background-color: var(--UMRed);
+    background: var(--ShadeGradient_Red);
     color: var(--White);
 }
 

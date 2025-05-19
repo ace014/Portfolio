@@ -18,7 +18,7 @@ section#mainContent > *{
     align-items: center;
     justify-content: center;
     border-radius: 0.75vw;
-    background: var(--UMRed);
+    background: var(--ShadeGradient_Red);
 }
 
 #bodyContent {
