@@ -11,8 +11,8 @@
             <a href="projects.php">OUR PROJECTS</a>
             <a href="gallery.php">OUR GALLERY</a>
             <a href="about-us.php">ABOUT US</a>
-            <a href="aboutUS.php" class="indent">ACE GERALD GALVEZ</a>
-            <a href="aboutUS.php" class="indent">VICTOR BRENTH SYMONE VILLAVER</a>
+            <a href="galvezPage.php" class="indent">ACE GERALD GALVEZ</a>
+            <a href="villaverPage.php" class="indent">VICTOR BRENTH SYMONE VILLAVER</a>
             <a href="contact-us.php">CONTACT US</a>
         </nav>
     </div>

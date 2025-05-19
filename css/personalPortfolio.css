@@ -1,0 +1,245 @@
+section#mainContent {    
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 2vh;
+    margin: 3vh 2vw 3vh 0;
+}
+
+section#mainContent > *{    
+    width: 100%;
+}
+
+#headerContent {
+    position: relative;
+    height: 40vh;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75vw;
+    background: var(--UMRed);
+}
+
+#bodyContent {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    border-radius: 0.75vw;
+    background: var(--White);
+    overflow: hidden;
+}
+
+#headerContent > #headerText {
+    flex: 1;
+}
+
+#headerContent > img {    
+    height: 80%;
+    margin: 0 2vw;
+    border: solid 0.5vh var(--DMaroon);
+    border-radius: 100%;
+}
+
+#headerText > h2 {
+    margin-bottom: 1vh;
+    color: var(--White);
+    font-size: 2rem;
+}   
+
+#headerText > h3 {    
+    margin-top: 0;
+    margin-bottom: 3vh;
+    font-size: 1.5rem;
+    color: var(--Yellow);
+}   
+
+
+#headerText > h4 {    
+    margin-bottom: 1vh;
+    font-size: 1.25rem;
+    color: var(--White);
+}   
+
+#headerText > ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#headerText > ul li {
+    background-color: var(--DMaroon);
+    color: var(--White);
+    padding: 1.5vh 1.5vw;
+    border-radius: 1vw;
+    transition: all 0.25s ease-in-out;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+#headerText > ul li:hover {
+    background-color: var(--Yellow);
+    transform: scale(1.05);
+}
+
+#bodyContent > #tabs {    
+    width: 100%;
+    display: flex;
+    gap: 1vw;
+    margin: 1vh 0;
+    justify-content: flex-start;
+}
+
+#bodyContent > #tabs > .tab:first-child {    
+    margin-left: 2vw;
+}
+
+#bodyContent > #tabs > .tab {    
+    padding: 1vh 0.75vw;
+    border-radius: 0.75vw;
+    cursor: pointer;
+    color: var(--UMRed);
+    font-size: 1rem;
+    font-weight: 700;
+    transition: all 0.25s ease-in-out;
+}
+
+#bodyContent > #tabs > .tab:hover {    
+    background: var(--UMRed);
+    color: var(--White);
+}
+
+#bodyContent > #tabs > .tab.active {
+  background: var(--UMRed);
+  color: var(--White);
+}
+
+#bodyContent > hr, #bodySlider > .slide > hr  {
+    height: 0.1vh;
+    width: 95%;
+    background: var(--UMRed);
+}
+
+#bodySlider {
+    display: flex;
+    flex-flow: row;
+    transition: all 0.25s ease-in-out;
+}
+
+#bodySlider > * {    
+    width: 100%;
+    flex-shrink: 0;
+}
+
+#bodySlider > .slide > hr {
+    width: 94%;
+}
+
+#bodySlider > .slide > * {
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+#bodySlider > .slide > p {
+    text-align: justify;
+}
+
+#bodySlider > .slide > h3  {
+    color: var(--UMRed);
+}
+
+#bodySlider > .slide > ul > li::marker {
+    color: var(--UMRed);
+}
+
+#bodySlider > .slide > .quote {    
+    padding: 0.5vh;
+    margin-bottom: 2vh;
+    border-radius: 0.75vw;
+    background: var(--LSilver);
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--DGray);
+}
+
+.timeline {
+  margin: 2rem 0;
+  padding-left: 1rem;
+  border-left: 2px solid var(--UMRed);
+  transform: scale(1.5) translate(20%, 15%);
+}
+
+.timeline-event {
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.timeline-event::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  background-color: var(--UMRed);
+  border-radius: 50%;
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: var(--UMRed);
+  margin-bottom: 0.25rem;
+}
+
+.timeline-info {
+  color: var(--DGray);
+  line-height: 1.4;
+}
+
+.collage {    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 25vh;
+    gap: 5px;
+}
+
+.collage-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.collage-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collage-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(0deg, var(--Charcoal), rgba(0, 0, 0, 0.75), transparent);
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: all 0.25s ease-in-out;
+}
+
+.collage-item:hover .overlay {
+    transform: translateY(0);
+}
+
+.collage-item.wide {
+    grid-column: span 2;
+}
+
+.collage-item.tall {
+    grid-row: span 2;
+}

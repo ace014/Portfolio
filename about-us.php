@@ -27,7 +27,7 @@
                         <h3>Victor Brenth Symone Villaver</h3>
                         <h4>Specialty Title/Job Title</h4>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
-                        <a href="">View My Portfolio</a>
+                        <a href="villaverPage.php">View My Portfolio</a>
                     </div>
                 </div>
                 <div class="developer">
@@ -36,7 +36,7 @@
                         <h3>Ace Jerald Galvez</h3>
                         <h4>Specialty Title/Job Title</h4>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
-                        <a href="">View My Portfolio</a>
+                        <a href="galvezPage.php">View My Portfolio</a>
                     </div>
                 </div>
             </section>
