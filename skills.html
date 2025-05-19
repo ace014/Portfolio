@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Skills</title>
+    <link rel="shortcut icon" href="img/png/logo.png" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/projects&skills.css" />
+  </head>
+  <body>
+    <main>
+      <aside>
+        <div id="top">
+          <img src="img/png/logo.png" alt="Logo" />
+          <h1>Our Skills</h1>
+        </div>
+        <div id="bot">
+          <nav>
+            <a href="index.html">HOME</a>
+            <a href="skills.html">OUR SKILLS</a>
+            <a href="projects.html">OUR PROJECTS</a>
+            <a href="gallery.html">OUR GALLERY</a>
+            <a href="about-us.html">ABOUT US</a>
+            <a href="galvezPage.html" class="indent">ACE JERALD GALVEZ</a>
+            <a href="villaverPage.html" class="indent">VICTOR BRENTH SYMONE VILLAVER</a>
+            <a href="contact-us.html">CONTACT US</a>
+          </nav>
+        </div>
+      </aside>
+      <section id="mainContent">
+        <div id="topContent">
+          <h1>LIST OF OUR SKILLS</h1>
+          <button id="upButton">
+            <div class="upArrow"></div>
+          </button>
+        </div>
+        <div id="midContent">
+          <div id="projectSlider">
+            <div class="project">
+              <div id="projectImg">
+                <img src="img/png/homeCarou1.png" alt="Project 1" />
+              </div>
+              <div id="projectDesc">
+                <h2>Web Development</h2>
+                <p>
+                  Lorem ipsum dolor sit amet. Qui nihil commodi est mollitia nostrum ut consequatur quos. Et sapiente enim aut consectetur magni aut amet omnis. Eos velit vero aut aliquam natus et quisquam temporibus qui voluptates velit qui quibusdam recusandae vel repudiandae dignissimos quo illum dolorem.
+                </p>
+              </div>
+            </div>
+            <div class="project">
+              <div id="projectImg">
+                <img src="img/png/homeCarou2.png" alt="Project 2" />
+              </div>
+              <div id="projectDesc">
+                <h2>Application Development</h2>
+                <p>
+                  Lorem ipsum dolor sit amet. Qui nihil commodi est mollitia nostrum ut consequatur quos. Et sapiente enim aut consectetur magni aut amet omnis. Eos velit vero aut aliquam natus et quisquam temporibus qui voluptates velit qui quibusdam recusandae vel repudiandae dignissimos quo illum dolorem.
+                </p>
+              </div>
+            </div>
+            <div class="project">
+              <div id="projectImg">
+                <img src="img/png/homeCarou2.png" alt="Project 3" />
+              </div>
+              <div id="projectDesc">
+                <h2>Game Development</h2>
+                <p>
+                  Lorem ipsum dolor sit amet. Qui nihil commodi est mollitia nostrum ut consequatur quos. Et sapiente enim aut consectetur magni aut amet omnis. Eos velit vero aut aliquam natus et quisquam temporibus qui voluptates velit qui quibusdam recusandae vel repudiandae dignissimos quo illum dolorem.
+                </p>
+              </div>
+            </div>
+            <div class="project">
+              <div id="projectImg">
+                <img src="img/png/homeCarou3.png" alt="Project 4" />
+              </div>
+              <div id="projectDesc">
+                <h2>Database Development</h2>
+                <p>
+                  Lorem ipsum dolor sit amet. Qui nihil commodi est mollitia nostrum ut consequatur quos. Et sapiente enim aut consectetur magni aut amet omnis. Eos velit vero aut aliquam natus et quisquam temporibus qui voluptates velit qui quibusdam recusandae vel repudiandae dignissimos quo illum dolorem.
+                </p>
+              </div>
+            </div>
+            <div class="project">
+              <div id="projectImg">
+                <img src="img/png/homeCarou3.png" alt="Project 5" />
+              </div>
+              <div id="projectDesc">
+                <h2>Video Editing</h2>
+                <p>
+                  Lorem ipsum dolor sit amet. Qui nihil commodi est mollitia nostrum ut consequatur quos. Et sapiente enim aut consectetur magni aut amet omnis. Eos velit vero aut aliquam natus et quisquam temporibus qui voluptates velit qui quibusdam recusandae vel repudiandae dignissimos quo illum dolorem.
+                </p>
+              </div>
+            </div>
+            <div class="project">
+              <div id="projectImg">
+                <img src="img/png/homeCarou3.png" alt="Project 6" />
+              </div>
+              <div id="projectDesc">
+                <h2>Graphics Design</h2>
+                <p>
+                  Lorem ipsum dolor sit amet. Qui nihil commodi est mollitia nostrum ut consequatur quos. Et sapiente enim aut consectetur magni aut amet omnis. Eos velit vero aut aliquam natus et quisquam temporibus qui voluptates velit qui quibusdam recusandae vel repudiandae dignissimos quo illum dolorem.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="botContent">
+          <button id="downButton">
+            <div class="downArrow"></div>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id="top"></div>
+      <div id="bot">
+        <p>© 2025 BlahBlahBlah.com. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      const upButton = document.getElementById("upButton");
+      const downButton = document.getElementById("downButton");
+      const projectSlider = document.getElementById("projectSlider");
+      const projects = document.querySelectorAll(".project");
+      let currentIndex = 0;
+      
+      function updateSlider() {
+        const offset = -currentIndex * 50;
+        projectSlider.style.transform = "translateY(" + offset + "vh)";
+      }
+      
+      upButton.addEventListener("click", () => {
+        if (currentIndex > 0) {
+          currentIndex--;
+          updateSlider();
+        }
+      });
+      
+      downButton.addEventListener("click", () => {
+        if (currentIndex < projects.length - 1) {
+          currentIndex++;
+          updateSlider();
+        }
+      });
+    </script>
+  </body>
+</html>
