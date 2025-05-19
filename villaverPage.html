@@ -1,18 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Villaver's Portfolio</title>
-    <link rel="shortcut icon" href="img/png/logo.png">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/personalPortfolio.css">
+    <link rel="shortcut icon" href="img/png/logo.png" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/personalPortfolio.css" />
+    <style>
+      #projectModal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s ease;
+        z-index: 2000;
+      }
+      #projectModal.active {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .modal-content {
+        background: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        max-width: 800px;
+        width: 90%;
+        transform: scale(0.8);
+        transition: transform 0.4s ease;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+      }
+      #projectModal.active .modal-content {
+        transform: scale(1);
+      }
+      .close-modal {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 24px;
+        cursor: pointer;
+      }
+      #modalImage {
+        flex: 1;
+        margin-right: 20px;
+      }
+      #modalDescription {
+        flex: 1;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    </style>
   </head>
   <body>
     <main>
       <aside>
         <div id="top">
-          <img src="img/png/logo.png" alt="Logo">
+          <img src="img/png/logo.png" alt="Logo" />
           <h1>Villaver's Portfolio</h1>
         </div>
         <div id="bot">
@@ -30,7 +82,7 @@
       </aside>
       <section id="mainContent">
         <div class="headerContent" id="headerContent">
-          <img src="img/png/developer1.png" alt="Victor Villaver">
+          <img src="img/png/developer1.png" alt="Victor Villaver" />
           <div id="headerText">
             <h2>Victor Brenth Symone Villaver</h2>
             <h3>Specialty Title/Job Title</h3>
@@ -49,12 +101,12 @@
             <div class="tab">My Education</div>
             <div class="tab">My Projects</div>
           </div>
-          <hr>
+          <hr />
           <div id="bodySlider">
             <div class="slide">
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
               <h3>Hobbies</h3>
-              <hr>
+              <hr />
               <ul>
                 <li>Hobby 1</li>
                 <li>Hobby 2</li>
@@ -62,7 +114,7 @@
                 <li>Hobby 4</li>
               </ul>
               <h3>Interests</h3>
-              <hr>
+              <hr />
               <ul>
                 <li>Interest 1</li>
                 <li>Interest 2</li>
@@ -70,7 +122,7 @@
                 <li>Interest 4</li>
               </ul>
               <h3>Professional Goals</h3>
-              <hr>
+              <hr />
               <ul>
                 <li>Goal 1</li>
                 <li>Goal 2</li>
@@ -87,28 +139,28 @@
                 <div class="timeline-event">
                   <div class="timeline-date">2005</div>
                   <div class="timeline-info">
-                    <strong>High School Diploma</strong><br>
+                    <strong>High School Diploma</strong><br />
                     ABC High School, Hometown
                   </div>
                 </div>
                 <div class="timeline-event">
                   <div class="timeline-date">2006 - 2010</div>
                   <div class="timeline-info">
-                    <strong>Bachelor's in Computer Science</strong><br>
+                    <strong>Bachelor's in Computer Science</strong><br />
                     XYZ University, City
                   </div>
                 </div>
                 <div class="timeline-event">
                   <div class="timeline-date">2011 - 2013</div>
                   <div class="timeline-info">
-                    <strong>Master's in Software Engineering</strong><br>
+                    <strong>Master's in Software Engineering</strong><br />
                     DEF University, Another City
                   </div>
                 </div>
                 <div class="timeline-event">
                   <div class="timeline-date">2011 - 2013</div>
                   <div class="timeline-info">
-                    <strong>Master's in Software Engineering</strong><br>
+                    <strong>Master's in Software Engineering</strong><br />
                     DEF University, Another City
                   </div>
                 </div>
@@ -116,32 +168,32 @@
             </div>
             <div class="slide">
               <div class="collage">
-                <div class="collage-item">
-                  <img src="img/png/homeCarou1.png" alt="Project 1">
+                <div class="collage-item" data-description="This project showcases our innovative design and development process. Detailed information about the technologies, challenges, and outcomes is provided here.">
+                  <img src="img/png/homeCarou1.png" alt="Project 1" />
                   <div class="overlay">
                     <h2>Project 1 Title</h2>
                   </div>
                 </div>
-                <div class="collage-item">
-                  <img src="img/png/homeCarou2.png" alt="Project 2">
+                <div class="collage-item" data-description="A project focusing on mobile development with excellent performance and sleek design.">
+                  <img src="img/png/homeCarou2.png" alt="Project 2" />
                   <div class="overlay">
                     <h2>Project 2 Title</h2>
                   </div>
                 </div>
-                <div class="collage-item">
-                  <img src="img/png/homeCarou3.png" alt="Project 3">
+                <div class="collage-item" data-description="This project integrates complex data analytics with user-friendly interfacing.">
+                  <img src="img/png/homeCarou3.png" alt="Project 3" />
                   <div class="overlay">
                     <h2>Project 3 Title</h2>
                   </div>
                 </div>
-                <div class="collage-item">
-                  <img src="img/png/homeCarou4.png" alt="Project 4">
+                <div class="collage-item" data-description="A creative design project that emphasizes visual storytelling and brand identity.">
+                  <img src="img/png/homeCarou4.png" alt="Project 4" />
                   <div class="overlay">
                     <h2>Project 4 Title</h2>
                   </div>
                 </div>
-                <div class="collage-item">
-                  <img src="img/png/homeCarou5.png" alt="Project 5">
+                <div class="collage-item" data-description="An innovative project that merges technology and art to deliver a unique user experience.">
+                  <img src="img/png/homeCarou5.png" alt="Project 5" />
                   <div class="overlay">
                     <h2>Project 5 Title</h2>
                   </div>
@@ -158,6 +210,15 @@
         <p>© 2025 BlahBlahBlah.com. All rights reserved.</p>
       </div>
     </footer>
+    <div id="projectModal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="modalContentWrapper" style="display: flex; flex-direction: row;">
+          <div id="modalImage" style="flex:1; margin-right:20px;"></div>
+          <div id="modalDescription" style="flex:1;"></div>
+        </div>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function() {
@@ -210,16 +271,40 @@
           "interactivity": {
             "detect_on": "canvas",
             "events": {
-              "onhover": {
-                "enable": false
-              },
-              "onclick": {
-                "enable": false
-              },
+              "onhover": { "enable": false },
+              "onclick": { "enable": false },
               "resize": true
             }
           },
           "retina_detect": true
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const modal = document.getElementById("projectModal");
+        const modalImage = document.getElementById("modalImage");
+        const modalDescription = document.getElementById("modalDescription");
+        const closeModal = document.querySelector(".close-modal");
+        document.querySelectorAll(".collage-item").forEach(item => {
+          item.style.cursor = "pointer";
+          item.addEventListener("click", function() {
+            modalImage.innerHTML = "";
+            modalDescription.innerHTML = "";
+            const clonedItem = item.cloneNode(true);
+            const descriptionText = item.getAttribute("data-description") || "Project details here.";
+            modalImage.appendChild(clonedItem);
+            modalDescription.textContent = descriptionText;
+            modal.classList.add("active");
+          });
+        });
+        closeModal.addEventListener("click", function() {
+          modal.classList.remove("active");
+        });
+        modal.addEventListener("click", function(e) {
+          if(e.target === modal) {
+            modal.classList.remove("active");
+          }
         });
       });
     </script>
