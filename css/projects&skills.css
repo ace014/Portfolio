@@ -66,6 +66,8 @@ section#mainContent > #midContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-shadow: 0 0 2vw var(--Charcoal) inset;
+    text-align: justify;
 }
 
 .project > #projectDesc > h2 {
