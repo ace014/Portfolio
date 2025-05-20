@@ -145,8 +145,9 @@
       let currentIndex = 0;
       
       function updateSlider() {
-        const offset = -currentIndex * 60;
-        projectSlider.style.transform = "translateY(" + offset + "vh)";
+        const projectHeight = document.querySelector(".project").offsetHeight; 
+        const offset = -currentIndex * projectHeight; 
+        projectSlider.style.transform = "translateY(" + offset + "px)";
       }
       
       upButton.addEventListener("click", () => {
