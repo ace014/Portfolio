@@ -4,37 +4,45 @@
     justify-content: center;
     flex-direction: column;
 }
-#mainContent > span {
-    font-weight: 700;
-    font-size: 1.25rem;
+#mainContent img {
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
 }
 #mainContent > div {
-    margin: 0.5vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1vw;
+    display: flex;
+    gap: 25px;
+    margin: 50px 25px 25px 25px;
 }
-#mainContent h3, #mainContent div > span {
-    text-transform: uppercase;
-}
-#mainContent div > span {
-    color: var(--White);
-}
-#mainContent a {
+#mainContent > span {
     font-weight: 700;
-    font-size: 1rem;
-}
-#mainContent div span {
-    font-weight: 700;
-    font-size: 0.8rem;
 }
 #mainContent > div > div {
-    background-color: var(--UMRed);
-    padding: 3vh 1.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#mainContent > div > div > div {
+    background-color: #B20E1E;
+    border-radius: 25px;
+    padding: 25px;
     width: calc(100vw * 0.3);
 }
-#mainContent > div > div > a {
+#mainContent > div > div > div:not(:first-child) > span {
     display: block;
-    color: var(--White);
+    font-size: 20px;
+}
+#mainContent > div > div > div:first-child {
+    align-items: center;
+    display: flex;
+    gap: 25px;
+}
+#mainContent > div span, #mainContent a {
+    color: #FFFFFF;
+}
+#mainContent a {
+    transition: font-weight 0.25s ease;
+}
+#mainContent a:hover {
+    font-weight: 700;
 }
