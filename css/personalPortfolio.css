@@ -67,6 +67,7 @@ section#mainContent > *{
     gap: 1rem;
     list-style: none;
     margin: 0;
+    margin-right: 2vw;
     padding: 0;
 }
 
@@ -175,6 +176,7 @@ section#mainContent > *{
 }
 
 .timeline-event {
+  width: 55%;
   margin-bottom: 1.5rem;
   position: relative;
   padding-left: 1rem;
@@ -204,8 +206,8 @@ section#mainContent > *{
 
 .collage {    
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 25vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 40vh;
     gap: 5px;
 }
 
@@ -243,4 +245,42 @@ section#mainContent > *{
 
 .collage-item.tall {
     grid-row: span 2;
+}
+
+@media only screen and (max-width: 550px) {
+    section#mainContent {
+        margin: 3vh 2vw;
+    }
+
+    #headerContent {
+        height: 75vh;
+        flex-flow: column;
+        gap: 2vh;
+    }
+
+    #headerContent > img {
+        height: unset;
+        width: 50%;
+    }
+
+    #headerContent > #headerText {
+        flex: unset;
+    }
+
+    #headerText > h2, #headerText > h3 {
+        text-align: center;
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+
+    #headerText > h4, #headerText > ul {
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+}
+
+@media only screen and (min-width: 551px)  and (max-width: 1000px) {
+    section#mainContent {
+        margin: 3vh 2vw;
+    }
 }

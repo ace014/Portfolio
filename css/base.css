@@ -13,6 +13,7 @@
 
 html {
     font-family: 'Montserrat', "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 15px;
 }
 
 body {
@@ -20,7 +21,6 @@ body {
     overflow-x: hidden;
     background: var(--LGray);
     color: var(--Charcoal);
-    font-size: 15px;
 }
 
 main {
@@ -28,6 +28,76 @@ main {
     flex-direction: row;
     gap: 2vw;
     min-height: 94vh;
+}
+
+header {
+    height: 10vh;
+    display: none;
+    background: var(--ShadeGradient_Red);
+}
+
+header #left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    padding: 3vh 2vw;
+    color: var(--White);
+}
+
+header #left img {
+    height: 170%;
+}
+
+#sliderNav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 30vw;
+    height: 100%;
+    background: var(--ShadeGradient_Red);
+    color: var(--White);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+  
+#sliderNav.visible {
+    right: 0; 
+}
+  
+.menu-button {
+    position: fixed;
+    top: 1.5vh;
+    right: 20px;
+    background: var(--UMRed);
+    color: var(--White);
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1100;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+  
+.menu-button:hover {
+    background: var(--DMaroon);
+}
+  
+#sliderNav a {
+    text-decoration: none;
+    color: var(--White);
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+  
+#sliderNav a:hover {
+    color: var(--Yellow);
 }
 
 aside {
@@ -135,4 +205,112 @@ footer {
 
 .shadowedBox {    
     box-shadow: 0.3vw 0.5vh 0.25vw var(--Charcoal);
+}
+
+@media only screen and (max-width: 300px) {
+    html {
+        font-size: 8px;
+    }
+
+    header {
+        display: flex;
+    }
+
+    #sliderNav {
+        width: 50vw;
+    }
+
+    aside {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 301px) and (max-width: 600px) {
+    html {
+        font-size: 10px;
+    }
+
+    header {
+        display: flex;
+    }
+
+    #sliderNav {
+        width: 50vw;
+    }
+
+    aside {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 700px) {
+    html {
+        font-size: 10px;
+    }
+
+    header {
+        display: flex;
+    }
+
+    #sliderNav {
+        width: 50vw;
+    }
+
+    aside {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 800px) {
+    html {
+        font-size: 12.5px;
+    }
+
+    header {
+        display: flex;
+    }
+
+    aside {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 900px) {
+    html {
+        font-size: 12.5px;
+    }
+
+    header {
+        display: flex;
+    }
+
+    aside {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1000px) {
+    html {
+        font-size: 12.5px;
+    }
+
+    header {
+        display: flex;
+    }
+
+    aside {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1200px) {
+    html {
+        font-size: 12.5px;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    html {
+        font-size: 25px;
+    }
 }

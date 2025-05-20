@@ -66,6 +66,8 @@ section#mainContent > #midContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-shadow: 0 0 2vw var(--Charcoal) inset;
+    text-align: justify;
 }
 
 .project > #projectDesc > h2 {
@@ -83,4 +85,57 @@ section#mainContent > #midContent {
 
 #upButton:hover, #downButton:hover {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 400px) {
+    section#mainContent > #midContent {
+        height: 40vh;
+        width: 100vw;
+        margin: 0;
+    }
+
+    section#mainContent > #midContent .project {
+        height: 40vh;
+        flex-flow: column;
+        border-radius: 0;
+    }
+
+    .project > #projectImg > img { 
+        height: auto;
+        width: 110%;
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+    section#mainContent > #midContent {
+        height: 40vh;
+        width: 100vw;
+        margin: 0;
+    }
+
+    section#mainContent > #midContent .project {
+        height: 40vh;
+        border-radius: 0;
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 800px) {
+    section#mainContent > #midContent {
+        width: 80vw;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 900px) {
+    section#mainContent > #midContent {
+        width: 80vw;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1000px) {
+    section#mainContent > #midContent {
+        width: 80vw;
+        margin: 0;
+    }
 }

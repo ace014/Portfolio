@@ -9,6 +9,23 @@
     <link rel="stylesheet" href="css/projects&skills.css">
   </head>
   <body>
+    <header>
+      <div id="left">
+        <img src="img/png/logo.png" alt="Logo" />
+        <h1 class="shadowedText">Our Projects</h1>
+      </div>
+      <button id="menuToggle" class="menu-button">☰</button>
+      <nav id="sliderNav" class="hidden">
+        <a href="index.html">HOME</a>
+        <a href="skills.html">OUR SKILLS</a>
+        <a href="projects.html">OUR PROJECTS</a>
+        <a href="gallery.html">OUR GALLERY</a>
+        <a href="about-us.html">ABOUT US</a>
+        <a href="galvezPage.html" class="indent">ACE JERALD GALVEZ</a>
+        <a href="villaverPage.html" class="indent active">VICTOR BRENTH SYMONE VILLAVER</a>
+        <a href="contact-us.html">CONTACT US</a>
+      </nav>
+    </header>
     <main>
       <aside>
         <div id="top">
@@ -39,27 +56,27 @@
           <div id="projectSlider">
             <div class="project">
               <div id="projectImg">
-                <img src="img/png/homeCarou1.png" alt="Project 1">
+                <img src="img/png/MusikahanWeb.png" alt="MusikahanWeb">
               </div>
               <div id="projectDesc">
-                <h2>Project 1 Title</h2>
+                <h2>Musikahan 2023 Website</h2>
                 <p>
-                  Date: Month Day, Year<br><br>
-                  Lorem ipsum dolor sit amet. Qui nihil commodi est mollitia nostrum ut consequatur quos. Et sapiente enim aut consectetur magni aut amet omnis. Eos velit vero aut aliquam natus et quisquam temporibus qui voluptates velit qui quibusdam recusandae vel repudiandae dignissimos quo illum dolorem.
+                  Date: February 2023<br><br>
+                  During our senior high school year, we were given the opportunity by our programming teacher to develop the official website for the Musikahan Festival 2023. It was our first real-world project, and we handled everything using static web technologies—pure HTML, CSS, and JavaScript. We even had meetings with city representatives and tourism staff to understand the content and requirements. Despite the challenge, the website was successfully published and went live during the event. It marked our first step into professional web development.
                 </p>
-              </div>
+              </div>              
             </div>
             <div class="project">
               <div id="projectImg">
-                <img src="img/png/homeCarou2.png" alt="Project 2">
+                <img src="img/png/VAMPic.png" alt="VAMPic">
               </div>
               <div id="projectDesc">
-                <h2>Project 2 Title</h2>
+                <h2>Virtual Automotive Simulator (VAM)</h2>
                 <p>
-                  Date: Month Day, Year<br><br>
-                  Lorem ipsum dolor sit amet. Qui nihil commodi est mollitia nostrum ut consequatur quos. Et sapiente enim aut consectetur magni aut amet omnis. Eos velit vero aut aliquam natus et quisquam temporibus qui voluptates velit qui quibusdam recusandae vel repudiandae dignissimos quo illum dolorem.
+                  Date: June 2023<br><br>
+                  This was our senior high school capstone project, developed in collaboration as our final requirement. VAM is a Unity-based game/simulator designed to assist automotive teachers at our school in demonstrating concepts and procedures in a virtual environment. It was by far the most challenging and ambitious project we’ve worked on, combining multiple disciplines such as C# programming, 3D modeling, game design, and interface development. Despite time constraints, we successfully presented the first-ever capstone project in our strand and earned recognition for having the best research paper and being the “Most Innovative” project in our batch.
                 </p>
-              </div>
+              </div>              
             </div>
             <div class="project">
               <div id="projectImg">
@@ -88,6 +105,7 @@
         <p>© 2025 BlahBlahBlah.com. All rights reserved.</p>
       </div>
     </footer>
+    <script src="js/sliderNav.js"></script>
     <script src="js/smokeEffect.js"></script>
     <script>
       const upButton = document.getElementById("upButton");
@@ -96,8 +114,9 @@
       const projects = document.querySelectorAll(".project");
       let currentIndex = 0;
       function updateSlider() {
-        const offset = -currentIndex * 60;
-        projectSlider.style.transform = "translateY(" + offset + "vh)";
+        const projectHeight = document.querySelector(".project").offsetHeight; 
+        const offset = -currentIndex * projectHeight; 
+        projectSlider.style.transform = "translateY(" + offset + "px)";
       }
       upButton.addEventListener("click", () => {
         if (currentIndex > 0) {

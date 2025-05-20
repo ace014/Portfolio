@@ -58,9 +58,12 @@ section#mainContent {
 }
 
 .developer > #developerText {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-shadow: 0 0 2vw var(--Charcoal) inset;
+    text-align: justify;
 }
 
 .developer > #developerText > *{
@@ -71,11 +74,13 @@ section#mainContent {
     margin-bottom: 1vh;
     color: var(--UMRed);
     font-size: 2rem;
+    text-align: left;
 }
 
 .developer > #developerText > h4 {
     margin-bottom: 3vh;
     font-size: 1.5rem;
+    text-align: left;
 }
 
 .developer > #developerText > p {
@@ -99,4 +104,50 @@ section#mainContent {
     color: var(--UMRed);
     border: 0.15vw solid var(--UMRed);
     transform: scale(1.025);
+}
+
+@media only screen and (max-width: 500px) {
+    .developer {
+        height: 25vh;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .developer > #developerText > p {
+        display: none;
+    }
+
+    .developer > #developerText > h4 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+    .developer {
+        height: 30vh;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .developer > #developerText > p {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1000px) {
+    .developer {
+        height: 40vh;
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1350px) {
+    .developer {
+        height: 40vh;
+    }
+
+    .developer > #developerText > p {
+        display: none;
+    }
 }
