@@ -71,7 +71,9 @@ section#mainContent > #midContent {
 }
 
 .project > #projectDesc > h2 {
+    margin-bottom: 0;
     color: var(--UMRed);
+    text-align: left;
 }
 
 #upButton, #downButton {
