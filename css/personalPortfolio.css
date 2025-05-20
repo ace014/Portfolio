@@ -3,11 +3,12 @@ section#mainContent {
     flex-flow: column;
     align-items: center;
     gap: 2vh;
-    margin: 3vh 2vw 3vh 0;
+    margin: 3vh 0;
 }
 
-section#mainContent > *{    
+section#mainContent > * {    
     width: 100%;
+    margin-right: 2vw;
 }
 
 #headerContent {
@@ -277,11 +278,23 @@ section#mainContent > *{
         margin-right: 2vw;
         margin-left: 2vw;
     }
+    
+    section#mainContent > * {    
+        margin-right: 0;
+    }
 }
 
 @media only screen and (min-width: 551px)  and (max-width: 1000px) {
     section#mainContent {
         margin: 3vh 2vw;
+    }
+    
+    section#mainContent > * {    
+        margin-right: 0;
+    }
+
+    #modalImage {
+        display: none;
     }
 }
 
