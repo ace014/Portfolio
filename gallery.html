@@ -45,7 +45,7 @@
           </nav>
         </div>
       </aside>
-      <section id="mainContent">
+      <section id="mainContent" class="gallery">
         <a class="photo">
           <img src="img/png/homeCarou1.png" alt="Image 1">
           <div class="photoText">
@@ -122,5 +122,15 @@
     </footer>
     <script src="js/sliderNav.js"></script>
     <script src="js/smokeEffect.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const gallery = document.querySelector(".gallery");
+        const photos = Array.from(gallery.children);
+
+        photos.sort(() => Math.random() - 0.5);
+
+        photos.forEach(photo => gallery.appendChild(photo));
+      });
+    </script>
   </body>
 </html>
